@@ -26,22 +26,31 @@ public:
     void gotMessage(ofMessage msg);
     
     int mode;
-    float intensity;
     int width;
     int height;
     
     deque<ofPixels> frames;
-    int frameBufferSize;
     // pixel array from constructing output image
     ofPixels imagePixels;
     ofImage image;
-    
     ofVideoPlayer video;
     
     // Main processing function which computes pixel color
     ofColor getSlitPixelColor( int x, int y);
     
     // gui and user interaction
-    
     ofxPanel guiPanel;
+    ofxToggle guiToggle;
+    // if there is a way to make these radio buttons do it
+    ofxButton horizontalSlit;
+    ofxButton verticalSlit;
+    ofxButton radalSlit;
+    
+    ofxFloatSlider slitWidth;
+    ofxFloatSlider playSpeed;
+    ofxIntSlider frameBufferSize;
+    
+private:
+    
+    
 };
