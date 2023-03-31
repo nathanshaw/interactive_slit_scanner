@@ -1,4 +1,5 @@
 # Compiled Object files
+i*.DS_Store
 *.slo
 *.lo
 *.o
